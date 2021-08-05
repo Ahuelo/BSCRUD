@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Inventario Bizcochería Sumerced</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='resources/css/style.css'>
+        <link 
+        rel="icon" 
+        type="favicon/x-icon"
+        href="resources/img/FAVICON.png">
+    </head>
+    <body>
+
+        <!--INICIO BARRA DE NAVEGACIÓN-->
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="http://localhost:3000/registro_producto">Registros</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/consultas">Consultas</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/register">R. Usuario</a>
+                </li>
+            </ul>
+        </nav>
+        <!--FIN BARRA DE NAVEGACIÓN-->
+
+                <!-- INICIO ASIDE-->
+                <aside>
+                    <form action="/auth" method="POST">
+                        <label class="label">Usuario</label>
+                        <input type="email" name="usuar" class="caja" id="user" placeholder="Correo Corporativo" required>
+                        <label class="label">Password</label>
+                        <input type="password" name="passw" class="caja" id="password" placeholder="Password" required>
+                        <input type="submit" value="Ingresar" class="boton">
+                        <input type="reset" value="Limpiar" class="boton">
+                    </form>
+                </aside>
+                <!--FIN ASIDE-->
+
+        <!--INICIO HEADER-->
+        <header>
+            <div id="logo">
+                <img src="resources/img/LOGO.png" alt="Logotipo" title="Biscochería Sumerced">
+            </div>
+            <h1><span id="first">Bizcochería</span><br><span id="end">Sumerced</span></h1>
+        </header>
+        <!--FIN HEADER-->
+
+        <!--INICIO FOOTER-->
+        <footer id="inicio">
+            <p>&copy;Todos los Derechos Reservados</p>
+        </footer>
+        <!--FIN FOOTER-->
+
+
+        <!-- EL sWEETALERT2 PARA VENTANAS EMERGENTES-->
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<% if (typeof alert !='undefined') { %>
+    <script>
+        swal.fire({
+            title:'<%= alertTitle %>',
+            text:'<%= alertMessage %>',
+            icon:'<%= alerticon %>',
+            showConfirmButton: <%= showConfirmButton %>,
+            timer: <%= timer %>
+        }).then(()=>{
+            window.location='/<%= ruta %>'
+        })
+        </script>
+<% } %>
+
+
+
+    </body>
+</html>

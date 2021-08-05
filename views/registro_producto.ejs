@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Registro producto</title>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link 
+        rel="icon" 
+        type="favicon/x-icon"
+        href="resources/img/FAVICON.png">
+        <link rel='stylesheet' type='text/css' media='screen' href='resources/css/registro_styles.css'>
+    </head>
+
+    <body>
+        <!--INICIO NAV-->
+        <nav id="nav">
+            <div id="logo">
+                <img src="resources/img/loguito.png" alt="Logotipo" title="Biscochería Sumerced">
+            </div>
+            <h1><a href="http://localhost:3000/inicio"><span id="first">Bizcochería</span><br><span id="end"> Sumerced</span></a></h1>
+            <ul>
+
+                <li>
+                    <a href="logout" class="activos">Desconectar</a>
+                </li>
+                <li>
+                    <a class="seleccion">Registros</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/consultas" class="activos">Consultas</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/register" class="activos">R. Usuario</a>
+                </li>
+            </ul>
+        </nav>
+        <!--FIN NAV-->
+
+        <!--INICIO HEADER-->
+        <header>
+            
+        </header>
+        <!--FIN HEADER-->
+
+        <div id="container"></div>
+
+        <!--INICIO SECTION-->
+        <section>
+            <!--<label>Información general</label>-->
+            <form id="formulario" action="/registro_producto" method="POST">
+                
+                <label>id</label>
+                <input type="text" name="id_produ" id="id_produ" placeholder="id" required/>
+                
+                <label>Nombre del producto</label>
+                <input type="text" name="nom_producto" id="nom_producto" placeholder="Nombre del producto" required/>
+                
+                <label>Cantidad del producto</label>
+                <input type="text" name="cantidad_producto" id="cantidad_producto" placeholder="Cantidad del producto"/>
+                
+                <label>Magnitud del producto</label>
+                <input type="text" name="magnitud_producto" id="magnitud_producto" placeholder="Magnitud del producto"/>
+                
+                <label>Unidades</label>
+	            <select name="unidades" id="unidades" placeholder="Unidades del Producto">
+                    <option>Gramos(Gm)</option>
+                    <option>Kilogramos(Kg)</option>
+                    <option>Litros(L)</option>
+                    <option>Minilitros(Cc)</option>
+
+                </select>
+                <label>Categoria</label>
+                <select name="categoria" id="categoria" placeholder="categoria">
+                    <option value="Grupo 1">Grupo 1(Lacteos y derivados)</option>
+                    <option value="Grupo 2">Grupo 2(Carnes, pescado y huevos)</option>
+                    <option value="Grupo 3">Grupo 3(Legumbres, frutos secos y patatas)</option>
+                    <option value="Grupo 4">Grupo 4(Hortalizas)</option>
+                    <option value="Grupo 5">Grupo 5(Frutas)</option>
+                    <option value="Grupo 6">Grupo 6(Cereales)</option>
+                    <option value="Grupo 7">Grupo 7(Manteca y aceites)</option>
+                    <option value="Grupo 8">Grupo 8(Chocolates y azucares)</option>
+                </select>
+
+                <label>Descripción</label>
+                <input type="text" name="descrip" id="descrip" placeholder="Descripción del producto"/>
+
+                <label>Fecha de vencimiento</label>
+                <input type="date" name="fecha_v" id="fecha_v"/>
+                <div id="botones_es">
+                    <input type="submit" value="Registrar" class="boton">
+                    <input type="reset" value="Limpiar" class="boton">
+                </div>
+            </form>
+        </section>
+        <!--FIN SECTION-->
+
+        <aside></aside>
+
+        <!--INICIO FOOTER-->
+        <footer id="reg_producto">
+            <p>&copy;Todos los Derechos Reservados</p>
+        </footer>
+        <!--FIN FOOTER-->
+
+                <!-- EL sWEETALERT2 PARA VENTANAS EMERGENTES-->
+
+                <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <% if (typeof alert !='undefined') { %>
+                    <script>
+                        swal.fire({
+                            title:'<%= alertTitle %>',
+                            text:'<%= alertMessage %>',
+                            icon:'<%= alerticon %>',
+                            showConfirmButton: <%= showConfirmButton %>,
+                            timer: <%= timer %>
+                        }).then(()=>{
+                            window.location='/<%= ruta %>'
+                        })
+                        </script>
+                <% } %>
+
+    </body>
+</html>

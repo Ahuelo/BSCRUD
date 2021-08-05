@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Registro</title>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link 
+        rel="icon" 
+        type="favicon/x-icon"
+        href="resources/img/FAVICON.png">
+        <link rel='stylesheet' type='text/css' media='screen' href='resources/css/registro_styles.css'>
+    </head>
+
+    <body>
+        <!--INICIO NAV-->
+        <nav id="nav">
+            <div id="logo">
+                <img src="resources/img/loguito.png" alt="Logotipo" title="Biscochería Sumerced">
+            </div>
+            <h1><a href="http://localhost:3000/inicio"><span id="first">Bizcochería</span><br><span id="end"> Sumerced</span></a></h1>
+            <ul>
+                <li>
+                    <a href="logout">Desconectar</a>
+                </li>
+                <li>
+                    <a class="seleccion">Registros</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/consultas" class="activos">Consultas</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/register" class="activos">R. Usuario</a>
+                </li>
+            </ul>
+        </nav>
+        <!--FIN NAV-->
+    
+        <!--INICIO HEADER-->
+        <header>
+                
+        </header>
+        <!--FIN HEADER-->
+        <div id="container"></div>
+        <!--INICIO SECTION-->
+        <section>
+            <!--<label>Información general</label>-->
+            <form id="formulario">
+                <label>NIT del Proveedor</label>
+                <input type="text" id="NIT_proveedor" placeholder="NIT del Proveedor"/>
+                <label>Nombre de Proveedor</label>
+                <input type="text" id="nom_proveedor" placeholder="Nombre del Proveedor"/>
+                <label>Dirección del Proveedor</label>
+                <input type="text" id="Dir_proveedor" placeholder="Dirección del Proveedor"/>
+                <label>Teléfono del Proveedor</label>
+                <input type="text" id="Telefono_proveedor" placeholder="Teléfono del Proveedor"/>
+                <label>Correo del Proveedor</label>
+                <input type="email" id="Correo_proveedor" placeholder="Correo del Proveedor">
+                <div id="botones_es">
+                    <input type="submit" value="Registrar" class="boton">
+                    <input type="reset" value="Limpiar" class="boton">
+                </div>
+            </form>
+        </section>
+        <!--FIN SECTION-->
+        <!--INICIO FOOTER-->
+        <footer id="Foot_Reg_Prov">
+            <p>&copy;Todos los Derechos Reservados</p>
+        </footer>
+        <!--FIN FOOTER-->
+    </body>
+</html>

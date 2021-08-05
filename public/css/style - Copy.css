@@ -1,0 +1,148 @@
+/*General*/
+*{
+    background-color: #FCDCDF;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*header*/
+header{
+    height: 700px;
+    width: 100%;
+}
+
+header #logo{
+    display: block;
+    float: left;
+    padding-top: 180px;
+    padding-left: 344px;
+}
+
+header #logo img{
+    width: 350px;
+}
+
+header h1{
+    display: block;
+    width: 370px;
+    float: left;
+    padding-top: 210px;
+    padding-left: 10px;
+    font-size: 80px;    
+    text-align: center;
+    color: #e85a77;
+    font-family: "Forte";
+    -webkit-text-stroke: 2px rgb(73, 42, 42);
+}
+
+#end{
+    color: #75c7d2;
+}
+
+/*Nav*/
+#nav{
+    float: right;
+    background-color: #C997C6 !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: right;
+}
+
+#nav ul{
+    background-color: #C997C6 !important;
+}
+
+#nav ul li{
+    display: inline-flex;
+    margin: 0px 20px 0px 20px;
+    background-color: #C997C6 !important;
+}
+
+#nav ul li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #C997C6 !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#nav ul li a:hover{
+    color: #73d6d6;
+    transition: 300ms;
+}
+
+/*ASIDE*/
+aside{
+    width: 0%; 
+    height: 550px;
+    display: block;
+    float: right;
+    margin-right: 510px;
+}
+
+aside form{
+    margin-top: 170px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+aside .label{
+    font-size: 30px;
+    color: #9f7fb1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+aside .caja{
+    width: 220px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #92558e;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+    padding-left: 10px;
+    background-color: #f8dbde;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+aside .caja:focus{
+    background-color: #feffbf;
+    color: #555;
+
+}
+
+aside form .boton{
+    border: 1px solid #C997C6;
+    padding: 10px;
+    width: 90px;
+    margin-right: 10px;
+    background-color: #C997C6;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+aside form .boton:hover{
+    color: #B0EFEF;
+    box-shadow: 1px 1px 4px #73d6d6;
+}
+
+/*Footer*/
+footer p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+}
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Consultas</title>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link 
+        rel="icon" 
+        type="favicon/x-icon"
+        href="resources/img/FAVICON.png">
+        <link rel='stylesheet' type='text/css' media='screen' href='resources/css/registro_styles.css'>
+        <!--USAMOS BOX ICONS-->
+                <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <!--INICIO NAV-->
+        <nav id="nav">
+            <div id="logo">
+                <img src="resources/img/loguito.png" alt="Logotipo" title="Biscochería Sumerced">
+            </div>
+            <h1><a href="http://localhost:3000/inicio"><span id="first">Bizcochería</span><br><span id="end"> Sumerced</span></a></h1>
+            <ul>
+                <li>
+                    <a href="logout" class="activos">Desconectar</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/registro_producto" class="activos">Registros</a>
+                </li>
+                <li>
+                    <a class="seleccion">Consultas</a>
+                </li>
+                <li>
+                    <a href="http://localhost:3000/register" class="activos">R. Usuario</a>
+                </li>
+            </ul>
+        </nav>
+        <!--FIN NAV-->
+
+        <div id="container"></div>
+        <!--INICIO SECTION-->
+        <section id="cajascroll">
+            <!--Inicio Tabla Productos-->
+            <!--Sin la clase establecidad, no deja centrar la tabla-->
+            <table class="TablaPrincipal">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre del Producto</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Unidades</th>
+                        <th scope="col">Magnitud</th>
+                        <th scope="col">Clase</th>
+                        <th scope="col">Fecha de vencimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% results.forEach((producto)=> { %>
+                    <tr>
+                        <td><%= producto.id_producto %></td>
+                        <td><%= producto.nom_producto %></td>
+                        <td><%= producto.cant_existente %></td>
+                        <td><%= producto.valor_magn_producto %></td>
+                        <td><%= producto.magn_producto %></td>
+                        <td><%= producto.cla_producto %></td>
+                        <td><%= producto.fch_venci %></td>
+                        <td>
+                            <a href="/edit/<%= producto.id_producto %>" class="tabla-btn">Editar</a>
+                            <a href="/delete/<%= producto.nom_producto %>" class="tabla-btn-red">Borrar</a>
+                        </td>
+                    </tr>
+                    <% }) %>
+
+                </tbody>
+            </table>
+            <!--FIN Tabla Productos-->
+
+            <!--inicio Codigo Clear-->
+            <div id="container"></div>
+            <!--Fin Código Clear-->
+
+
+            <!--INICIO Línea Divisoria-->
+            <hr width=80%>
+            <!--FIN Línea Divisoria-->
+
+
+        </section>
+        <!--FIN SECTION-->
+
+        <!--INICIO FOOTER-->
+        <footer id="Foot_Consulta">
+            <p>&copy;Todos los Derechos Reservados</p>
+        </footer>
+        <!--FIN FOOTER-->
+
+<!-- EL sWEETALERT2 PARA VENTANAS EMERGENTES-->
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<% if (typeof alert !='undefined') { %>
+    <script>
+        swal.fire({
+            title:'<%= alertTitle %>',
+            text:'<%= alertMessage %>',
+            icon:'<%= alerticon %>',
+            showConfirmButton: <%= showConfirmButton %>,
+            timer: <%= timer %>
+        }).then(()=>{
+            window.location='/<%= ruta %>'
+        })
+        </script>
+<% } %>
+
+
+    </body>
+</html>

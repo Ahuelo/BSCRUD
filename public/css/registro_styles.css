@@ -1,0 +1,486 @@
+/*Configuración general de paginas(COLOR DE FONDO PIEL)*/
+*{
+    background-color: #FCDCDF;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*BARRA DE NAVEGACIÓN GENERAL PARA TODAS LAS PÁGINAS*/
+#nav{
+    float: right;
+    background-color: #C997C6 !important;
+    width: 100%;
+    height: 35px;
+    text-align: right;
+}
+
+#nav ul{
+    background-color: #C997C6 !important;
+}
+
+#nav ul li{
+    display: inline-flex;
+    margin: 0px 20px 0px 20px;
+    background-color: #C997C6 !important;
+}
+
+#nav ul li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #C997C6 !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#nav ul li a.activos{
+    cursor: pointer;
+}
+
+#nav ul li a.seleccion{
+    color: #7dd9e6;
+    -webkit-text-stroke: 1px rgb(60, 124, 133);
+}
+
+#nav ul li a.activos:hover{
+    color: #73d6d6;
+    transition: 300ms;
+}
+
+#nav #logo{
+    padding-top: 0% !important;
+}
+
+#nav #logo img{
+    display: block;
+    width: 50px;
+    background-color: #C997C6 !important;
+    float: left;
+    margin: 3px;
+    padding-top: 7px;
+    padding-left: 15px;
+    margin-right: 10px;
+}
+
+#nav h1{
+    display: block;
+    font-size: 20px;    
+    color: #e85a77;
+    font-family: "Forte";
+    background-color: #C997C6 !important;
+    float: left;
+    -webkit-text-stroke: 1px rgb(73, 42, 42);
+    text-align: center;
+    margin-top: 4px;
+}
+
+#nav h1 a{
+    text-decoration: none;
+}
+
+#first{
+    color: #e85a77;
+    background-color: #C997C6 !important;
+}
+
+#end{
+    color: #75c7d2;
+    background-color: #C997C6 !important;
+}
+
+/*Section*/
+/*Formulario*/
+#container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+    /*Base formulario generales*/
+section{
+    margin-top: 100px;
+}
+/*Base formulario generales*/
+form{
+    display: block;
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#f7d2d5;
+    padding-right: 5px;
+    box-sizing:border-box;
+}
+
+
+form label{
+	width:268px;
+    color: #9f7fb1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+	font-weight:bold;
+	display:inline-block;
+    background-color: #F7D2D5;
+
+}
+
+/*Formulario Registro Producto*/
+form input[type="text"],
+form input[type="email"],
+form input[type="date"]{
+	width:247px;
+	padding:3px 10px;
+    border: 1px solid #92558e;
+	border-radius:5px;
+	background-color:#f8dbde;
+	margin:8px 0;
+	display:inline-block;
+    color: #555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Seleccion de opciones en registro producto*/
+form select{
+	width: 269px;
+	padding:3px 10px;
+    border: 1px solid #92558e;
+	border-radius:5px;
+	background-color:#f8dbde;
+	margin:8px 0;
+	display:inline-block;
+    color: #555;
+}
+
+form select option{
+    background-color: #feffbf;
+}
+
+/*Formulario Registro Proveedor*/
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus,
+form input[type="date"]:focus{
+    background-color: #feffbf;
+    color: #555;
+}
+/*Codigo para centrar botones en Registro proveedor*/
+section form #botones_es{
+    width: 270px;
+    text-align: center;
+    background-color: #F7D2D5;
+}
+
+/*INICIO Botones de ingreso INICIO*/
+section form .boton{
+    border: 1px solid #C997C6;
+    padding: 10px;
+    width: 90px;
+    margin-right: 10px;
+    background-color: #C997C6;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section form .boton:hover{
+    color: #B0EFEF;
+    box-shadow: 1px 1px 4px #73d6d6;
+}
+/*FIN Botones de INICIO*/
+
+/*Botones Pagina Registro*/
+.bot_selec{
+    background-color: #FCDCDF;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bot_selec:first-child{
+    margin-top: 225px;
+}
+
+section form .boton_sel{
+    border: 1px solid #C997C6;
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    background-color: #C997C6;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section form .boton_sel:hover{
+    color: #B0EFEF;
+    box-shadow: 1px 1px 4px #73d6d6;
+}
+
+/*Boton selección consultas inicial*/
+.bot_search{
+    background-color: #FCDCDF;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bot_search:first-child{
+    margin-top: 225px;
+}
+
+section form .bot_search{
+    border: 1px solid #C997C6;
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    background-color: #C997C6;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section form .bot_search:hover{
+    color: #B0EFEF;
+    box-shadow: 1px 1px 4px #73d6d6;
+}
+
+
+/*Botones de consulta final*/
+section form .boton_final{
+    padding: 10px;
+    width: 230px;
+    margin-right: 10px;
+    background-color: #C997C6;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid #C997C6;
+}
+
+section form .boton_final:hover{
+    color: #B0EFEF;
+    box-shadow: 1px 1px 4px #73d6d6;
+}
+
+.form_consulta{
+    display: block;
+    float: left;
+    background-color: #FCDCDF;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#form_consulta{
+    text-align: center;
+    margin-left: 450px;
+}
+
+/*Tabla de busqueda*/
+/*Parte superior Tabla*/
+
+.tabla_producto{
+    display: block;
+    float: left;
+    background-color: #C997C6;
+}
+
+.tabla_proveedor{
+    display: block;
+    float: left;
+    background-color: #C997C6;
+}
+
+table th{
+    padding: 10px;
+    background-color: #C997C6;
+    color: white;
+    border: solid #FCDCDF;
+}
+
+td{
+    text-align: center;
+    border-bottom: 2px solid #C997C6;
+    color: #333;
+    font-size: 18px;
+}
+
+.TablaPrincipal{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Línea Divisoria*/
+hr{
+    margin-top: 30px;
+    color: #C997C6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Footers*/
+/*Footer index*/
+footer{
+
+    margin-top: 141px;
+}
+
+footer p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+}
+
+/*Footer Registro_Proveedor*/
+#Reg_proveedor{
+    margin-top: 258px;
+}
+
+#Reg_proveedor p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+}
+/*Footer Registro Proveedor*/
+#Foot_Reg_Prov p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+    margin-top: 58.5px;
+}
+/*Footer Registro*/
+#Reg p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+    margin-top: 126.5px;
+}
+
+/*Footer Consulta*/
+#Foot_Consulta p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+    margin-top: 147px;
+}
+
+/*Footer Pedido*/
+#Foot_Pedido{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+    margin-top: 82px;
+}
+/*Footer Registro de productos*/
+#reg_producto{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+    margin-top: 23px;
+}
+/*Footer Inicio*/
+#inicio p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+    margin-top: 139px;
+}
+
+/*Footer Register*/
+#register p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #F496c2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+    margin-top: 0px;
+}
+
+
+.tabla-btn{
+    background-color: #C997C6;
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid #FCDCDF;
+    text-decoration: none;
+}
+
+.tabla-btn:hover{
+    background-color: #B0EFEF;
+    box-shadow: 1px 1px 4px #73d6d6;
+    color: #C997C6;
+}
+
+.tabla-btn-red{
+    background-color: #C997C6;
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid #FCDCDF;
+    text-decoration: none;
+}
+
+.tabla-btn-red:hover{
+    background-color: #ff4b1e;
+    box-shadow: 1px 1px 4px #ff4b1e;
+}
+
